@@ -1,0 +1,64 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+body {
+    font-family: 'figtree', 'Sans-serif';
+}
+
+::selection {
+    @apply text-neutral-50 bg-neutral-950;
+}
+
+@media (prefers-color-scheme: dark) {
+    ::selection {
+        @apply bg-neutral-50 text-neutral-950;
+    }
+}
+
+.section {
+    @apply transition-opacity duration-500 opacity-40 saturate-0;
+}
+
+.section.active, .section:hover {
+    @apply opacity-100 saturate-100;
+}
+
+.section .header {
+    @apply font-stretch-extra-expanded min-h-8;
+}
+
+.nav-item {
+    @apply text-left w-full box-border dark:hover:text-white dark:hover:border-2 dark:hover:border-neutral-50 rounded-sm hover:text-neutral-500 transition cursor-pointer;
+}
+
+.nav-item.active {
+    @apply dark:text-black dark:bg-neutral-50 bg-neutral-800 text-neutral-50 font-bold;
+}
+
+#experience-container li {
+    @apply list-disc list-outside ml-8 py-1 text-sm;
+}
+
+/* Gallery thanks to: https://codepen.io/noirsociety/pen/JjVXYgX */
+#interactive-gallery {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    /* grid-auto-rows: 10vmin; */
+    gap: 1rem 0.25rem;
+
+    & .gallery-image {
+        background-size: cover;
+        background-position: center;
+    }
+}
+
+img.gallery-image[data-pos='1'] {
+    grid-column: 1/6;
+    grid-row: 1/6;
+    @apply border-2 border-neutral-800;
+}
+
+img.gallery-image {
+    @apply object-cover object-center cursor-pointer ;
+}

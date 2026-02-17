@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Jeremiah's personal portfolio">
+
+    <title>rein0x13 | Frontpage</title>
+
+    <link href="./src/css/style.css" rel="stylesheet">
+
+    <script src="./src/js/three.min.js"></script>
+    <script src="./src/js/vanta.dots.min.js"></script>
+    <script src="./src/js/typeit.min.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="dark:bg-black dark:text-neutral-50 bg-neutral-50 text-neutral-950 leading-relaxed">
+    <div id="vanta-dots-bg" class="md:h-113 h-96 p-5">
+        <div class="h-full flex flex-col justify-between">
+            <div class="self-end flex md:flex-row flex-col md:gap-4 gap-2">
+                <a href="https://www.linkedin.com/in/jeremiah-barrientos-674257261/" target="_blank"
+                    class="inline-flex items-center min-h-4 hover:underline">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                        class="fill-neutral-100" width="16" height="16">
+                        <path
+                            d="M20.5 2h-17A1.5 1.5 0 002 3.5v17A1.5 1.5 0 003.5 22h17a1.5 1.5 0 001.5-1.5v-17A1.5 1.5 0 0020.5 2zM8 19H5v-9h3zM6.5 8.25A1.75 1.75 0 118.3 6.5a1.78 1.78 0 01-1.8 1.75zM19 19h-3v-4.74c0-1.42-.6-1.93-1.38-1.93A1.74 1.74 0 0013 14.19a.66.66 0 000 .14V19h-3v-9h2.9v1.3a3.11 3.11 0 012.7-1.4c1.55 0 3.36.86 3.36 3.66z">
+                        </path>
+                    </svg><span class="pseudo-redacted pl-1 text-sm text-neutral-200"
+                        data-str="Wrerzvnu Oneevragbf"></span>
+                </a>
+                <a href="https://github.com/rein0x13" target="_blank"
+                    class="inline-flex items-center min-h-4 hover:underline">
+                    <svg class="fill-neutral-100" height="16" viewBox="0 0 24 24" version="1.1" width="16">
+                        <path
+                            d="M12 1C5.923 1 1 5.923 1 12c0 4.867 3.149 8.979 7.521 10.436.55.096.756-.233.756-.522 0-.262-.013-1.128-.013-2.049-2.764.509-3.479-.674-3.699-1.292-.124-.317-.66-1.293-1.127-1.554-.385-.207-.936-.715-.014-.729.866-.014 1.485.797 1.691 1.128.99 1.663 2.571 1.196 3.204.907.096-.715.385-1.196.701-1.471-2.448-.275-5.005-1.224-5.005-5.432 0-1.196.426-2.186 1.128-2.956-.111-.275-.496-1.402.11-2.915 0 0 .921-.288 3.024 1.128a10.193 10.193 0 0 1 2.75-.371c.936 0 1.871.123 2.75.371 2.104-1.43 3.025-1.128 3.025-1.128.605 1.513.221 2.64.111 2.915.701.77 1.127 1.747 1.127 2.956 0 4.222-2.571 5.157-5.019 5.432.399.344.743 1.004.743 2.035 0 1.471-.014 2.654-.014 3.025 0 .289.206.632.756.522C19.851 20.979 23 16.854 23 12c0-6.077-4.922-11-11-11Z">
+                        </path>
+                    </svg><span class="pseudo-redacted pl-1 text-sm text-neutral-200" data-str="erva0k13"></span>
+                </a>
+
+            </div>
+            <div class="self-start">
+                <h1
+                    class="md:text-7xl text-5xl align-middle p-2 dark:bg-neutral-100 bg-neutral-800 dark:text-black text-neutral-50">
+                    <span id="glitch" class="dark:text-neutral-600 text-neutral-300 text-center"></span><span
+                        id="glitchShuffle"></span>
+                </h1>
+                <div class="min-h-8">
+                    <h4 id="specialization"></h4>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <article id="general-content" class="mx-auto my-10 pt-10">
+        <div class="flex md:flex-row flex-col">
+            <!-- LEFT SIDE -->
+            <aside class="hidden md:block text-left p-5 pt-16">
+                <nav class="sticky flex flex-col top-1/4 space-y-2 justify-start w-32">
+                    <button data-target="about-me" class="nav-item pt-2 pl-2 pb-1 pr-5">about me</button>
+                    <button data-target="experience" class="nav-item pt-2 pl-2 pb-1 pr-5">experience</button>
+                    <button data-target="gallery" class="nav-item pt-2 pl-2 pb-1 pr-5">gallery</button>
+                    <button data-target="insights" class="nav-item pt-2 pl-2 pb-1 pr-5">insights</button>
+                    <button data-target="ethics" class="nav-item pt-2 pl-2 pb-1 pr-5">ethics</button>
+                    <button data-target="hobbies" class="nav-item pt-2 pl-2 pb-1 pr-5">hobbies</button>
+                    <button data-target="skills" class="nav-item pt-2 pl-2 pb-1 pr-5">skills</button>
+                </nav>
+            </aside>
+            <!-- RIGHT SIDE -->
+            <div class="self-center px-10 md:px-16 lg:px-32 flex items-center justify-around md:w-7/8">
+                <div class="max-w-3xl container">
+                    <section id="about-me" class="section">
+                        <div class="md:py-16 pb-16">
+                            <h2 class="header text-3xl font-bold mb-6">-</h2>
+                            <div class="flex flex-col-reverse sm:flex-row sm:gap-3 gap-8">
+                                <img src="assets/profile.jpg"
+                                    alt="I mean a photo of me"
+                                    class="object-cover sm:w-48 w-full sm:self-auto self-center rounded-sm bg-top aspect-auto"
+                                    loading="lazy">
+                                <p>
+                                    Hi. My real name is <span class="pseudo-redacted" data-str="Wrerzvnu">...</span>. I
+                                    usually go with the name <span class="pseudo-redacted" data-str="Wva">...</span> to
+                                    shorten my
+                                    name
+                                    while I
+                                    occasionally use
+                                    rein0x13 as my username. I am a little
+                                    bit
+                                    of a private person, a free
+                                    thinker, and value genuine people. I have <span id="laravel-experience">...</span>
+                                    of
+                                    experience
+                                    developing web
+                                    systems using Laravel, a PHP framework paired with Filament for accelerated
+                                    development.
+                                    I am very interested in
+                                    learning more techniques, practices, and technologies (legacy, current, and
+                                    emerging) to
+                                    further
+                                    upskill myself and
+                                    widen my knowledge and
+                                    tech
+                                    stack. I have been exploring different linux distributions and desktop
+                                    environments
+                                    as a hobby and as a learning opportunity. I
+                                    am
+                                    looking for a company to learn, work, and grow together in the longterm.
+                                </p>
+                            </div>
+                        </div>
+                    </section>
+                    <section id="experience" class="section">
+                        <div class="py-16">
+                            <h2 class="header text-3xl font-bold mb-6">-</h2>
+                            <p>
+                                I had the opportunity to work as a project-based web developer at <span
+                                    class="pseudo-redacted"
+                                    data-str="PerngvirQriYnof Vaabingvir VG Fbyhgvbaf">...</span> from
+                                December 2023 to July 2025 alongside my undergraduate studies at <span
+                                    class="pseudo-redacted" data-str="ZYT Pbyyrtr bs Yrneavat, Vap">...</span>.
+                            </p>
+
+                            <div id="experience-container">
+                                <!-- Content is generated from script.js -->
+                            </div>
+
+                            <div class="flex flex-col gap-3">
+                                <p>
+                                    I have also assisted in the development of Fortune Sea Careers Human Resource
+                                    Information System Mockup and resolved some issues and requests for Springbuild
+                                    Development Web System.
+                                </p>
+                                <p>
+                                    During development, I always consider edge cases, end user experience, stability,
+                                    and security.
+                                </p>
+                                <p>
+                                    I have also taken up some clients to build their desktop computers, install required
+                                    software, hardware upgrades, troubleshooting, recommendations, system recoveries and
+                                    repairs.
+                                </p>
+                            </div>
+                        </div>
+
+                    </section>
+                    <section id="gallery" class="section">
+                        <div class="py-16">
+                            <h2 class="header text-3xl font-bold mb-6">-</h2>
+                            <h4 class="mb-3">Click to open the image in a new tab.</h4>
+                            <div id="interactive-gallery">
+                                <img class='gallery-image' src="assets/thenest1.jpg" loading="lazy"
+                                    alt="screenshot 1 of my past work" data-pos='1' />
+                                <img class='gallery-image' src="assets/thenest2.png" loading="lazy"
+                                    alt="screenshot 2 of my past work " data-pos='2' />
+                                <img class='gallery-image' src="assets/thenest3.png" loading="lazy"
+                                    alt="screenshot 3 of my past work" data-pos='3' />
+                                <img class='gallery-image' src="assets/cz1.jpg" loading="lazy"
+                                    alt="screenshot 4 of my past work" data-pos='4' />
+                                <img class='gallery-image' src="assets/cz2.jpg" loading="lazy"
+                                    alt="screenshot 5 of my past work" data-pos='5' />
+                                <img class='gallery-image' src="assets/rdr1.jpg" loading="lazy"
+                                    alt="screenshot 5 of my past work" data-pos='6' />
+                            </div>
+                        </div>
+                    </section>
+                    <section id="insights" class="section">
+                        <div class="py-16">
+                            <h2 class="header text-3xl font-bold mb-6">-</h2>
+                            <div class="flex flex-col gap-3">
+                                <p>
+                                    Presently, my laptop has 3 different bare-metal operating system installed with
+                                    two separate EFI partitions. The
+                                    first one is Kubuntu
+                                    24.04 LTS (KDE Plasma 5.27 on X11 but have Weston installed for running Wayland-only
+                                    applications) and is configured for web development and daily use. I use DDEV to
+                                    quickly spin up a docker-based PHP development environments and Visual
+                                    Studio Code as my code editor but I'm considering to migrating to a different one.
+                                </p>
+                                <p>
+                                    The second one is Microsoft Windows 11 IoT Enterprise LTSC <span
+                                        class="text-neutral-500">(if you know, you know...)</span> for software not
+                                    yet (or might never be) natively supported on Linux. Microsoft Office is still
+                                    powerful and
+                                    polished
+                                    compared to LibreOffice, and since one of my hobby is playing the piano, this is
+                                    also where my VST libraries live. Both of my external storage are also formatted as
+                                    NTFS which
+                                    occassionally get some issues that Windows built-in disk utilities easily solves.
+                                </p>
+                                <p>
+                                    The third one is generally where I test out different linux distributions (planning
+                                    to learn BSD-based distros in my free time soon too) after installing them in a
+                                    virtual machine, experiencing their bare-metal performance.
+                                    Currently, Debian 13 (with Gnome 48 desktop environment on
+                                    Wayland) is installed just recently, and I've chosen this linux distro particularly
+                                    this time to serve as a
+                                    fallback for work if things get suddenly broken on my Kubuntu. Previously, this
+                                    partition is where my CachyOS lived, a rolling release Arch-based distro to get the
+                                    bleeding edge of software and to do some experimentations (thank you BTRFS-snapper
+                                    and cachy-chroot
+                                    for saving me multiple times). This partition is generally where
+                                    I test out different distros (planning to learn FreeBSD soon too in my free time)
+                                    after installing them in a virtual machine. Honestly, I wished I explored Linux a
+                                    lot earlier.
+                                </p>
+                                <p>
+                                    I'm planning to do some home-labbing in the future and self-host AI locally for
+                                    privacy,
+                                    control
+                                    and simply to learn more. While I love modern and future computers, I'm also fond of
+                                    old and retro computers as they hold so much history and are full of character.
+                                </p>
+                                <p>
+                                    I value trust not only in people but also in software. I
+                                    have
+                                    been using Microsoft Windows in my whole computing life since Windows XP down to
+                                    Windows
+                                    11. I have previously joined the Windows Insider program to test out new
+                                    developments
+                                    and
+                                    provide feedback before the Fall Creators Update was released back in 2017.
+                                    Unfortunately, the more I used Windows, the more I was exposed to its
+                                    shady natures. From forced online accounts, system-level advertisements, aggressive
+                                    telemetry, automatic non-security breaking updates, it's certainly heart-breaking
+                                    what Windows has become.
+                                    The
+                                    tipping point was when Microsoft pushed an update that corrupted my previous
+                                    laptop's
+                                    Windows 11 install beyond repair. Lots of
+                                    missing and corrupted system files, ACPI and booting issues, and broken windows
+                                    recovery, trust in Microsoft fading - that is when I started considering using a
+                                    linux-based operating system
+                                    instead whenever I can.
+                                </p>
+                                <p>
+                                    Fast forward 4 months after, I bought a second hand Lenovo Thinkpad X1 Carbon
+                                    Gen 8
+                                    and
+                                    has been my daily driver. I have tried multiple linux distributions and desktop
+                                    environments each with their own ups and downs... and politics. From the flavors of
+                                    Ubuntu Interim and
+                                    LTS releases, Debian, Fedora, and CachyOS to the different desktop environments such
+                                    as
+                                    Gnome, KDE Plasma, XFCE, LXQT, Sway, and Niri WM. Despite choosing a thinkpad, my
+                                    experience was not without major setbacks. However, I have loved the experience
+                                    overall
+                                    and have fallen in love with Free and Open Source Software.
+                                </p>
+                                <p>
+                                    I'm still new to sharing my personal thoughts online, but I hope
+                                    that this gives you some unfiltered insights on my character and hoping to reach out
+                                    to the right people. I am looking forward
+                                    to upskill myself, especially with the
+                                    proliferation of AI and
+                                    other emerging technologies.
+                                </p>
+                            </div>
+                        </div>
+                    </section>
+                    <section id="ethics" class="section">
+                        <div class="py-16">
+                            <h2 class="header text-3xl font-bold mb-6">-</h2>
+                            <div class="flex flex-col gap-3">
+                                <p>
+                                    I believe that I have a strong work ethic and sense of responsibility. I acknowledge
+                                    that the code I write and the
+                                    decisions I make is my responsibility to maintain. As I value clients, the team, and
+                                    the
+                                    company/organization that I'll be working with, I always put myself ready to fix
+                                    bugs whenever they arise at outmost urgency and be willing to maintain their
+                                    systems. This is why I also believe that documentation, communication, and
+                                    understanding is also important. I do not think only for myself and co-developers, but
+                                    I also think for
+                                    the
+                                    client
+                                    and/or
+                                    the end users. I would also do in my power to follow relevant laws and protect
+                                    confidential data entrusted to me by the client and by the company.
+                                </p>
+                                <p>
+                                    I am always open for feedback and value receiving critism, recognizing these lessons
+                                    would help me become a better developer and avoid bad practices and minimize
+                                    technical debt.
+                                </p>
+                                <p>
+                                    While I am flexible, eager to learn and explore new things approaching them with an
+                                    open
+                                    mind, I am
+                                    strongly not open to developing software
+                                    nor collaborating with people that
+                                    scams or in any shape or form promotes harmful activities, no matter
+                                    how much money and/or power is
+                                    involved.
+                                </p>
+                            </div>
+                        </div>
+                    </section>
+                    <section id="hobbies" class="section">
+                        <div class="py-16">
+                            <h2 class="header text-3xl font-bold mb-6">-</h2>
+                            <div class="flex flex-col gap-3">
+                                <p>
+                                    Aside from using and tinkering with computers, I am also a self-taught pianist. I
+                                    love making
+                                    music as much as listening. I can usually play by ear depending on the
+                                    complexity of the song or piece. My digital piano is always connected through a USB
+                                    MIDI interface with a software installed on my laptop known as a Piano VST plugin.
+                                    This is where I mostly relax and express myself.
+                                </p>
+                                <p>
+                                    I also love watching various contents on YouTube that are mostly tech-related. I
+                                    love
+                                    looking at computer benchmarks, product reviews, restoring old laptops and desktop
+                                    computers, goofy builds, and more to count. These helped me give the right hardware
+                                    recommendations to my friends and/or clients whenever they want to purchase a laptop
+                                    or build them their computers. This is also where I gained fondness with Thinkpads
+                                    and influenced me on purchasing one.
+                                </p>
+                                <p>
+                                    I used to play games for hours when I was young. The PC game where I used to burn most of
+                                    my hours
+                                    was The Elder Scrolls V: Skyrim where I installed a lot of mods, replayed the game a
+                                    couple of times, and did lots of tweaks using the built-in game console. I have also
+                                    played Cyberpunk 2077 which has helped me on difficult times and has been an eye
+                                    opener making me think deeply when it comes to the good and bad about tech,
+                                    corporations, and people. After reaching college up to now, I only play seldomly as
+                                    I am busy with school works am investing my time
+                                    in growing my career instead.
+                                </p>
+                                <p>
+                                    I would love to explore the world and contribute to the Free and Open Source
+                                    Software in the future along with the company.
+                                </p>
+                            </div>
+                        </div>
+                    </section>
+                    <section id="skills" class="section">
+                        <div class="py-16">
+                            <h2 class="header text-3xl font-bold mb-6">-</h2>
+                            <ul class="list-disc list-inside grid sm:grid-cols-2 md:grid-cols-3">
+                                <li>PHP</li>
+                                <li>Laravel</li>
+                                <li>Filament</li>
+                                <li>Tailwind CSS</li>
+                                <li>Livewire</li>
+                                <li>Git</li>
+                                <li>GitHub</li>
+                                <li>MySQL</li>
+                                <li>SQLite</li>
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>JavaScript</li>
+                                <li>DDEV</li>
+                                <li>Bash</li>
+                                <li>SSH</li>
+                                <li>Regex</li>
+                                <li>Vite</li>
+                                <li>Asana</li>
+                                <li>Notion</li>
+                                <li>Linux Desktop</li>
+                                <li>Windows</li>
+                                <li>Hyper V</li>
+                                <li>Multipass</li>
+                                <li>Laravel Herd</li>
+                                <li>Postman</li>
+                                <li>Expose</li>
+                            </ul>
+                        </div>
+                    </section>
+
+                </div>
+
+            </div>
+        </div>
+    </article>
+
+    <footer class="container mx-auto mb-10 mt-32 text-center">
+        <div class="flex flex-col gap-3 items-center justify-center">
+            <p id="wip">
+                <!-- To 8finity and beyond. -->
+            </p>
+        </div>
+    </footer>
+
+    <script type="module" src="./src/js/script.js"></script>
+    <!-- <script defer src="./src/js/interactiveGallery.js"></script> -->
+</body>
+
+</html>
