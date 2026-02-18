@@ -201,6 +201,9 @@
   .sticky {
     position: sticky;
   }
+  .top-1 {
+    top: calc(var(--spacing) * 1);
+  }
   .top-1\/4 {
     top: calc(1/4 * 100%);
   }
@@ -261,6 +264,9 @@
   .inline-flex {
     display: inline-flex;
   }
+  .table {
+    display: table;
+  }
   .aspect-auto {
     aspect-ratio: auto;
   }
@@ -285,8 +291,14 @@
   .max-w-3xl {
     max-width: var(--container-3xl);
   }
+  .flex-grow {
+    flex-grow: 1;
+  }
   .grow {
     flex-grow: 1;
+  }
+  .border-collapse {
+    border-collapse: collapse;
   }
   .resize {
     resize: both;
@@ -346,6 +358,10 @@
   .rounded-sm {
     border-radius: var(--radius-sm);
   }
+  .border {
+    border-style: var(--tw-border-style);
+    border-width: 1px;
+  }
   .border-\[1px\] {
     border-style: var(--tw-border-style);
     border-width: 1px;
@@ -373,6 +389,9 @@
   }
   .p-5 {
     padding: calc(var(--spacing) * 5);
+  }
+  .px-5 {
+    padding-inline: calc(var(--spacing) * 5);
   }
   .px-10 {
     padding-inline: calc(var(--spacing) * 10);
@@ -448,9 +467,16 @@
   .text-neutral-950 {
     color: var(--color-neutral-950);
   }
+  .underline {
+    text-decoration-line: underline;
+  }
   .shadow {
     --tw-shadow: 0 1px 3px 0 var(--tw-shadow-color, rgb(0 0 0 / 0.1)), 0 1px 2px -1px var(--tw-shadow-color, rgb(0 0 0 / 0.1));
     box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+  }
+  .outline {
+    outline-style: var(--tw-outline-style);
+    outline-width: 1px;
   }
   .blur {
     --tw-blur: blur(8px);
@@ -489,6 +515,11 @@
   .sm\:self-auto {
     @media (width >= 40rem) {
       align-self: auto;
+    }
+  }
+  .sm\:px-10 {
+    @media (width >= 40rem) {
+      padding-inline: calc(var(--spacing) * 10);
     }
   }
   .md\:block {
@@ -766,6 +797,11 @@ img.gallery-image {
   inherits: false;
   initial-value: 0 0 #0000;
 }
+@property --tw-outline-style {
+  syntax: "*";
+  inherits: false;
+  initial-value: solid;
+}
 @property --tw-blur {
   syntax: "*";
   inherits: false;
@@ -844,6 +880,7 @@ img.gallery-image {
       --tw-ring-offset-width: 0px;
       --tw-ring-offset-color: #fff;
       --tw-ring-offset-shadow: 0 0 #0000;
+      --tw-outline-style: solid;
       --tw-blur: initial;
       --tw-brightness: initial;
       --tw-contrast: initial;
